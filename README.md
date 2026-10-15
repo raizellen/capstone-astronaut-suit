@@ -1,4 +1,4 @@
-# sensor link: test server for the AdaptiveHUD telemetry endpoint
+## sensor link: test server for the AdaptiveHUD telemetry endpoint
 
 stand-in for the adaptive HUD backend's telemetry endpoint, use it to test a sensor against the same request the real backend accepts, without installing anything. you only need python. it accepts the same request as the real backend, so if your sensor works here it'll work against the real thing.
 
@@ -8,7 +8,7 @@ run:
 it should print every reading it receives, and warns about anything unusual (wrong type, unknown field, value outside the expected range)
 
 for actual connection, send readings to:
-  POST http://<backend-machine-ip>:8080/telemetry
+  `POST http://<backend-machine-ip>:8080/telemetry`
 
 
 ## request
